@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
-import MemberForm from "./Components/MemberForm";
-import Member from "./Components/Member";
+import MemberForm from "./Components/MemberComponents/MemberForm";
+import Member from "./Components/MemberComponents/Member";
+import Welcome from "./Components/Welcome";
+import { Route } from "react-router-dom";
 
 function App() {
   const [teamMembers, setTeamMembers] = useState([
@@ -34,6 +36,7 @@ function App() {
     <div>
       <MemberForm addMemberFn={addMember} />
       <Member members={teamMembers} deleteMemberFn={deleteMember} />
+      <Route exact path="/welcome" component={Welcome} />
     </div>
   );
 }
