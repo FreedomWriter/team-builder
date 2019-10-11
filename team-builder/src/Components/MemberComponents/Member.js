@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Card,
-  CardImg,
   CardText,
   CardBody,
   CardLink,
@@ -33,9 +32,7 @@ export default function Member({ members, deleteMemberFn }) {
               <CardSubtitle>{member.role}</CardSubtitle>
               <CardText>{member.email}</CardText>
               <CardLink>
-                <Button onClick={() => deleteMemberFn(member.id)}>
-                  Delete
-                </Button>
+                <Button onClick={() => console.log(member.id)}>Edit</Button>
               </CardLink>
               <CardLink>
                 <Button onClick={() => deleteMemberFn(member.id)}>

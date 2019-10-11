@@ -1,2 +1,10 @@
 .App {
 }
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 2%;
+  margin: 2%;
+}

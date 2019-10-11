@@ -32,11 +32,13 @@ function App() {
     setTeamMembers(newArray);
   };
 
+  // const edit = id => {
+  //   console.log(teamMembers.id);
+  // };
   return (
     <div>
       <MemberForm addMemberFn={addMember} />
       <Member members={teamMembers} deleteMemberFn={deleteMember} />
-      <Route exact path="/welcome" component={Welcome} />
     </div>
   );
 }
